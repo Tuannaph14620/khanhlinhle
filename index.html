@@ -539,14 +539,14 @@
         }
 
         .textLetter .contentLetter {
-            font-size: 19px;
+            font-size: 17px;
             text-align: center;
             padding: 0px 30px;
             margin-top: 10px;
             font-family: 'Dancing Script', cursive;
             position: initial;
-
         }
+
 .fa-xmark{
     position: absolute;
     right: 20px;
@@ -1036,7 +1036,7 @@
         // chữ của thư bạn muốn gửi
         let indexTextContent = 0;
         let textLetterContent = document.querySelector('.contentLetter');
-        const textLetterP = "Khi ở độ tuổi đẹp nhất, hãy yêu thương bản thân mình thật tốt, hãy sống với vẻ đẹp riêng của mình và nở rộ như một bông hoa. Yêu bản thân, làm nữ thần của riêng minh cậu nhé💗";
+        const textLetterP = "Khi ở độ tuổi đẹp nhất, hãy yêu thương bản thân mình thật tốt, hãy sống với vẻ đẹp riêng của mình và nở rộ như một bông hoa. Yêu bản thân, làm nữ thần của riêng mình cậu nhé💗 \n Từ chàng trai hạnh phúc nhất ngày 8/3 :))";
         let timoutTextLetterContent;
         function textCharLetterContent() {
             if (indexTextContent < textLetterP.length) {
@@ -1049,6 +1049,8 @@
 
             }
         }
+
+        
         function funcTimeoutLetterContent() {
             indexTextContent = 0; // Reset indexTextContent
             textLetterContent.textContent = ''; // Xóa nội dung hiện tại của textLetter
@@ -1091,7 +1093,7 @@
             targets: [leafOne, stickLine, leafTwo, leafS1, rose1, rose2, rose3, rose4],
             strokeDashoffset: [anime.setDashoffset, 0],
             easing: 'easeInOutCubic',
-            duration: 4000,
+            duration: 3000,
             begin: function (anim) {
                 //Leaf One
                 leafOne.setAttribute("stroke", "black");
